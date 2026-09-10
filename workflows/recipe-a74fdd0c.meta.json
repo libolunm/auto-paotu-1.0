@@ -1,0 +1,52 @@
+{
+  "trigger": "masterpiece, very aesthetic",
+  "lead": "a richly textured heroic fantasy painting of",
+  "qualityTail": "",
+  "weight": 1.2,
+  "source": {
+    "type": "recipe",
+    "id": "a74fdd0c-48ab-4c64-ad6b-7822fb75a301",
+    "title": "Detail Enhancement & DoF Slider Krea2细节景深滑块-1.00_krea2_slender_kyonyu_v4-1.00_skindetails_",
+    "nsfwLevel": 0,
+    "previewUrl": "/api/lm/previews?path=E%3A%2Fwoyao%2Fmodels%2Floras%2Frecipes%2Fa74fdd0c-48ab-4c64-ad6b-7822fb75a301.webp",
+    "sourcePath": "",
+    "loras": [
+      {
+        "name": "Krea 2/tool/Detail Enhancement & DoF Slider Krea2细节景深滑块",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/character/krea2_slender_kyonyu_v4",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/skindetails_krea2_loraholic",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/Detailer-KREA2",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/RealismSlider-v1",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/BreastSlider-KREA2",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/style/krea2_Enhancer",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/PornMaster_Detail_Slider_Krea2_V2",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+        "strength": 1
+      }
+    ]
+  }
+}

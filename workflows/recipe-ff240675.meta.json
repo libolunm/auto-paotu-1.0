@@ -1,0 +1,40 @@
+{
+  "trigger": "masterpiece, very aesthetic",
+  "lead": "an ancient Chinese hanfu dreamscape painting of",
+  "qualityTail": "",
+  "weight": 1.5,
+  "source": {
+    "type": "recipe",
+    "id": "ff240675-d03e-4999-b1c8-9435f80acb0f",
+    "title": "Krea 2/style/Storybook_Folk_Art_Krea2-0.35_MARBAS-KREA-V1-0.30_krea2-masterpieces-v51-1.00",
+    "nsfwLevel": 0,
+    "previewUrl": "/api/lm/previews?path=E%3A%2Fwoyao%2Fmodels%2Floras%2Frecipes%2Fff240675-d03e-4999-b1c8-9435f80acb0f.webp",
+    "sourcePath": "",
+    "loras": [
+      {
+        "name": "Krea 2/style/Storybook_Folk_Art_Krea2",
+        "strength": 0.35
+      },
+      {
+        "name": "Krea 2/style/MARBAS-KREA-V1",
+        "strength": 0.3
+      },
+      {
+        "name": "Krea 2/concept/krea2-masterpieces-v51",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/anime/Krea2_DreamWeaveHanfu",
+        "strength": 0.4
+      },
+      {
+        "name": "Krea 2/tool/Detail Enhancement & DoF Slider Krea2细节景深滑块",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+        "strength": 1
+      }
+    ]
+  }
+}

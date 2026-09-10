@@ -1,0 +1,24 @@
+{
+  "trigger": "amazing quality, best quality, masterpiece, very aesthetic",
+  "lead": "a storybook folk art illustration of",
+  "qualityTail": "",
+  "weight": 0.6,
+  "source": {
+    "type": "recipe",
+    "id": "58065daa-bba4-4358-b3b4-fde596ceebe5",
+    "title": "Image posted by Sillycat83",
+    "nsfwLevel": 2,
+    "previewUrl": "/api/lm/previews?path=E%3A%2Fwoyao%2Fmodels%2Floras%2Frecipes%2F58065daa-bba4-4358-b3b4-fde596ceebe5.webp",
+    "sourcePath": "https://civitai.red/images/139096657",
+    "loras": [
+      {
+        "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/style/Storybook_Folk_Art_Krea2",
+        "strength": 1
+      }
+    ]
+  }
+}

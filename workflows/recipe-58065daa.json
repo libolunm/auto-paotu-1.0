@@ -1,0 +1,482 @@
+{
+  "2": {
+    "inputs": {
+      "__lm_autocomplete_meta_text": {
+        "version": 1,
+        "textWidgetName": "text"
+      },
+      "text": "<lora:Krea 2/tool/Krea2_TextFusion_Refusal_Reduction:1> <lora:Krea 2/style/Storybook_Folk_Art_Krea2:1>",
+      "loras": {
+        "__value__": [
+          {
+            "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+            "strength": 1,
+            "active": true,
+            "expanded": false,
+            "clipStrength": 1,
+            "selected": false,
+            "locked": false
+          },
+          {
+            "name": "Krea 2/style/Storybook_Folk_Art_Krea2",
+            "strength": 1,
+            "active": true,
+            "expanded": false,
+            "clipStrength": 1,
+            "selected": false,
+            "locked": false
+          }
+        ]
+      },
+      "model": [
+        "138",
+        0
+      ],
+      "clip": [
+        "138",
+        1
+      ]
+    },
+    "class_type": "Lora Loader (LoraManager)",
+    "_meta": {
+      "title": "Lora Loader (LoraManager)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "width": [
+        "13",
+        0
+      ],
+      "height": [
+        "13",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "空Latent图像"
+    }
+  },
+  "13": {
+    "inputs": {
+      "aspect_ratio": "2:3 (Portrait Photo)",
+      "megapixels": 1.3,
+      "multiple": 8
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "分辨率选择器"
+    }
+  },
+  "17": {
+    "inputs": {
+      "group_mode": true,
+      "default_active": {
+        "__value__": [
+          {
+            "text": "createconcept",
+            "active": true
+          },
+          {
+            "text": "DS-Illu",
+            "active": true
+          }
+        ]
+      },
+      "allow_strength_adjustment": false,
+      "toggle_trigger_words": {
+        "__value__": [
+          {
+            "text": "masterpiece",
+            "active": {
+              "__value__": [
+                {
+                  "text": "createconcept",
+                  "active": true
+                },
+                {
+                  "text": "DS-Illu",
+                  "active": true
+                }
+              ]
+            },
+            "highlighted": false,
+            "strength": null,
+            "items": [
+              {
+                "text": "masterpiece",
+                "active": true,
+                "highlighted": false,
+                "strength": null
+              }
+            ]
+          },
+          {
+            "text": "very aesthetic",
+            "active": {
+              "__value__": [
+                {
+                  "text": "createconcept",
+                  "active": true
+                },
+                {
+                  "text": "DS-Illu",
+                  "active": true
+                }
+              ]
+            },
+            "highlighted": false,
+            "strength": null,
+            "items": [
+              {
+                "text": "very aesthetic",
+                "active": true,
+                "highlighted": false,
+                "strength": null
+              }
+            ]
+          },
+          {
+            "text": "sora 72-iro krea2 style",
+            "active": {
+              "__value__": [
+                {
+                  "text": "createconcept",
+                  "active": true
+                },
+                {
+                  "text": "DS-Illu",
+                  "active": true
+                }
+              ]
+            },
+            "highlighted": false,
+            "strength": null,
+            "items": [
+              {
+                "text": "sora 72-iro krea2 style",
+                "active": true,
+                "highlighted": false,
+                "strength": null
+              }
+            ]
+          },
+          {
+            "text": "@NJSW33T",
+            "active": {
+              "__value__": [
+                {
+                  "text": "createconcept",
+                  "active": true
+                },
+                {
+                  "text": "DS-Illu",
+                  "active": true
+                }
+              ]
+            },
+            "highlighted": false,
+            "strength": null,
+            "items": [
+              {
+                "text": "@NJSW33T",
+                "active": true,
+                "highlighted": false,
+                "strength": null
+              }
+            ]
+          }
+        ]
+      },
+      "orinalMessage": "masterpiece,, very aesthetic,, sora 72-iro krea2 style,, @NJSW33T",
+      "trigger_words": [
+        "2",
+        2
+      ]
+    },
+    "class_type": "TriggerWord Toggle (LoraManager)",
+    "_meta": {
+      "title": "Lora tag"
+    }
+  },
+  "18": {
+    "inputs": {
+      "__lm_autocomplete_meta_text": {
+        "version": 1,
+        "textWidgetName": "text"
+      },
+      "text": "fugtrup_style, a high-end 3D digital art of Mei from Overwatch. 3d,\n1girl, mei \\(overwatch\\), hair stick, brown hair, brown eyes, single hair bun, short hair,\ncow print, bikini, glasses, collar, cow print bikini, navel, neck cowbell, areola slip, huge breasts, cowboy shot, cow print highleg thong, lips, female pubic hair, curvy, collarbone, pubic hair, pubic hair peek,\nsolo, blush, embarrassed,\nlooking at viewer, simple background, blue background,   \n\nPolished 3D aesthetics, smooth skin textures, glossy expressive eyes, soft subsurface scattering,  vibrant rim lighting. Clean minimalist blue background,  masterwork 3D character art.",
+      "clip": [
+        "2",
+        1
+      ],
+      "trigger_words1": "amazing quality, best quality, masterpiece, very aesthetic"
+    },
+    "class_type": "Prompt (LoraManager)",
+    "_meta": {
+      "title": "Prompt (LoraManager)"
+    }
+  },
+  "138": {
+    "inputs": {
+      "lora_name": "Krea 2\\tool\\Krea2_TextFusion_Refusal_Reduction.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1,
+      "model": [
+        "1554",
+        0
+      ],
+      "clip": [
+        "1555",
+        0
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "加载LoRA"
+    }
+  },
+  "200": {
+    "inputs": {
+      "preset": "custom",
+      "multiplier": 1,
+      "knob_0": 0,
+      "knob_1": 0,
+      "knob_2": 0,
+      "knob_3": 0,
+      "knob_4": 0,
+      "knob_5": 0,
+      "knob_6": 0,
+      "knob_7": -0.7,
+      "knob_8": -1.023438,
+      "knob_9": -1.78125,
+      "knob_10": -1.21875,
+      "knob_11": 0,
+      "Save Preset": "save_preset",
+      "Delete Selected Preset": "delete_preset",
+      "Open Presets Folder": "open_folder",
+      "model": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "Krea2ProjectorTuner",
+    "_meta": {
+      "title": "Krea2 Projector Tuner (BSS)"
+    }
+  },
+  "201": {
+    "inputs": {
+      "seed": 972636236486300,
+      "steps": 12,
+      "cfg": 1,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "denoise": 1,
+      "fovea_strength": 3,
+      "sharpness": 0.5,
+      "mask_inertia": 0.85,
+      "model": [
+        "210",
+        0
+      ],
+      "positive": [
+        "18",
+        0
+      ],
+      "negative": [
+        "1550",
+        0
+      ],
+      "latent_image": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "FLS_SamplerV4",
+    "_meta": {
+      "title": "FLSampler (BSS)"
+    }
+  },
+  "210": {
+    "inputs": {
+      "threshold": 0.15,
+      "teacache_version": "v2 (Standard Precise)",
+      "adaptive_mode": true,
+      "early_steps_factor": 0.4,
+      "late_steps_factor": 1.8,
+      "start_percent": 0,
+      "end_percent": 1,
+      "cache_device": "cuda",
+      "model": [
+        "1547",
+        0
+      ]
+    },
+    "class_type": "AnimaTeaCache",
+    "_meta": {
+      "title": "Anima TeaCache (BSS)"
+    }
+  },
+  "1515": {
+    "inputs": {},
+    "class_type": "QuickGroupManager",
+    "_meta": {
+      "title": "⚡ 快速组管理器-🎨文生图"
+    }
+  },
+  "1517": {
+    "inputs": {
+      "samples": [
+        "201",
+        0
+      ],
+      "vae": [
+        "1556",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "1526": {
+    "inputs": {
+      "sharpen_radius": 1,
+      "sigma": 0.3,
+      "alpha": 0.3,
+      "image": [
+        "1527",
+        0
+      ]
+    },
+    "class_type": "ImageSharpen",
+    "_meta": {
+      "title": "锐化图像"
+    }
+  },
+  "1527": {
+    "inputs": {
+      "anything": [
+        "1517",
+        0
+      ]
+    },
+    "class_type": "easy cleanGpuUsed",
+    "_meta": {
+      "title": "清理显存占用"
+    }
+  },
+  "1528": {
+    "inputs": {
+      "model_name": "2x-AnimeSharpV4_RCAN.safetensors"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "加载放大模型"
+    }
+  },
+  "1529": {
+    "inputs": {
+      "upscale_model": [
+        "1528",
+        0
+      ],
+      "image": [
+        "1526",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "使用模型放大图像"
+    }
+  },
+  "1535": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "1529",
+        0
+      ]
+    },
+    "class_type": "SaveImageAdvanced",
+    "_meta": {
+      "title": "保存图像（高级）"
+    }
+  },
+  "1547": {
+    "inputs": {
+      "anything": [
+        "200",
+        0
+      ]
+    },
+    "class_type": "easy cleanGpuUsed",
+    "_meta": {
+      "title": "清理显存占用"
+    }
+  },
+  "1549": {
+    "inputs": {
+      "anything": [
+        "1535",
+        0
+      ]
+    },
+    "class_type": "easy cleanGpuUsed",
+    "_meta": {
+      "title": "清理显存占用"
+    }
+  },
+  "1550": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "2",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码"
+    }
+  },
+  "1554": {
+    "inputs": {
+      "model_name": "krea2\\krea2_turbo_int8_convrot.safetensors",
+      "sage_attention": "auto",
+      "torch_compile": false
+    },
+    "class_type": "AnimaBoosterLoader",
+    "_meta": {
+      "title": "Anima Booster Loader (BSS)"
+    }
+  },
+  "1555": {
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "加载CLIP"
+    }
+  },
+  "1556": {
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "加载VAE"
+    }
+  }
+}

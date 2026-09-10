@@ -1,0 +1,28 @@
+{
+  "trigger": "amazing quality, masterpiece",
+  "lead": "a cinematic photograph of",
+  "qualityTail": "",
+  "weight": 1,
+  "source": {
+    "type": "recipe",
+    "id": "2978cca0-6eb0-402f-ad92-c0bb6e4c8188",
+    "title": "fubuwa_semi_real_krea2_v1-0.50_PornMaster_Detail_Slider_Krea2_V2-1.00_Krea2_TextFusion_Ref",
+    "nsfwLevel": 0,
+    "previewUrl": "/api/lm/previews?path=E%3A%2Fwoyao%2Fmodels%2Floras%2Frecipes%2F2978cca0-6eb0-402f-ad92-c0bb6e4c8188.webp",
+    "sourcePath": "",
+    "loras": [
+      {
+        "name": "Krea 2/style/fubuwa_semi_real_krea2_v1",
+        "strength": 0.5
+      },
+      {
+        "name": "Krea 2/tool/PornMaster_Detail_Slider_Krea2_V2",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+        "strength": 1
+      }
+    ]
+  }
+}

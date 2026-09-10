@@ -1,0 +1,11 @@
+# 个人数据与大文件不入库
+runs/
+cache/
+node_modules/
+
+# 个人配置（含本机 ComfyUI 路径）；模板见 config.example.json
+config.json
+
+# 系统杂物
+Thumbs.db
+Desktop.ini

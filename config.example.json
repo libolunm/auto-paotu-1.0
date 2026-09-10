@@ -1,0 +1,12 @@
+{
+  "base": "http://127.0.0.1:8188",
+  "watchdogMs": 500000,
+  "restartGraceMs": 300000,
+  "maxRestartsPerImage": 3,
+  "maxConsecutiveFailures": 3,
+  "comfy": {
+    "exe": "C:\\path\\to\\your\\ComfyUI\\python.exe",
+    "args": ["main.py", "--preview-method", "auto", "--use-sage-attention", "--cuda-malloc", "--cpu-vae", "--fast"],
+    "cwd": "C:\\path\\to\\your\\ComfyUI"
+  }
+}

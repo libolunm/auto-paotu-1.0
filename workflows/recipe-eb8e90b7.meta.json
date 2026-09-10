@@ -1,0 +1,28 @@
+{
+  "trigger": "@NJSW33T",
+  "lead": "a nostalgic dreamy anime illustration of",
+  "qualityTail": "",
+  "weight": 0.8,
+  "source": {
+    "type": "recipe",
+    "id": "eb8e90b7-85a4-4c8b-be53-3c8c959ffcaa",
+    "title": "Image posted by Sino_Ren",
+    "nsfwLevel": 0,
+    "previewUrl": "/api/lm/previews?path=E%3A%2Fwoyao%2Fmodels%2Floras%2Frecipes%2Feb8e90b7-85a4-4c8b-be53-3c8c959ffcaa.webp",
+    "sourcePath": "https://civitai.red/images/140065917",
+    "loras": [
+      {
+        "name": "Krea 2/anime/z3zz4-k2-4_c1-st5000",
+        "strength": 0.8
+      },
+      {
+        "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/anime/Niji_Sweet_Spot_Krea2_v2B",
+        "strength": 0.6
+      }
+    ]
+  }
+}

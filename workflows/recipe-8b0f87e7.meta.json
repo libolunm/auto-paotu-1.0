@@ -1,0 +1,36 @@
+{
+  "trigger": "MSK",
+  "lead": "cinematic dark romantic concept art of",
+  "qualityTail": "",
+  "weight": 1,
+  "source": {
+    "type": "recipe",
+    "id": "8b0f87e7-c5ca-474a-be44-79bab9ace24f",
+    "title": "Image posted by Sino_Ren",
+    "nsfwLevel": 16,
+    "previewUrl": "/api/lm/previews?path=E%3A%2Fwoyao%2Fmodels%2Floras%2Frecipes%2F8b0f87e7-c5ca-474a-be44-79bab9ace24f.webp",
+    "sourcePath": "https://civitai.red/images/140369500",
+    "loras": [
+      {
+        "name": "Krea 2/anime/MSK_balanced_krea",
+        "strength": 0.6
+      },
+      {
+        "name": "Krea 2/tool/detail_slider_krea2_loraholic",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/tool/Krea2_TextFusion_Refusal_Reduction",
+        "strength": 1
+      },
+      {
+        "name": "Krea 2/style/meion_krea2_style_v7.0_c1-st4000",
+        "strength": 0.6
+      },
+      {
+        "name": "Krea 2/anime/gst_lora_v2_copy_000001250",
+        "strength": 0.8
+      }
+    ]
+  }
+}
