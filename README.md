@@ -38,7 +38,7 @@ cd auto-paotu-1.0
 
 ### 2. 准备运行环境
 
-安装 [Node.js 20 或更高版本](https://nodejs.org/)。本项目不需要 `npm install`；runner 只使用 Node.js 内置模块和仓库内的 `.mjs` 文件。
+推荐安装 [Node.js 24](https://nodejs.org/)（当前验证版本）。代码使用 `import.meta.dirname`，至少需要 Node.js 20.11；不支持早期 Node.js 20 版本。本项目不需要 `npm install`；runner 只使用 Node.js 内置模块和仓库内的 `.mjs` 文件。
 
 准备一套能通过 `http://127.0.0.1:8188` 提供 API 的 ComfyUI，并确认它可以单独运行一个目标工作流。
 
@@ -227,6 +227,17 @@ cache/                              # 本地缓存，不入 Git
 
 同一个项目目录只应同时运行一个 runner。当前锁文件由 runner 在批次计划写入后创建；两个 runner 不应并行启动，外部脚本直接调用 ComfyUI API 也不会受此保护。
 
+### 当前版本的使用限制
+
+- **续跑只处理 `pending`**：`failed` 不会自动重试。没有可续跑的 active batch 时，`--resume` 会进入新批次规划；先用 `--resume --show` 检查计划，确认输出包含 `resuming`。
+- **画幅需再次传入**：画幅覆盖尚未保存在批次计划里。续跑横版批次时，请再次传入原来的 `--size` 或 `--ratio` 参数。
+- **归档不是任意批次恢复入口**：`batches[]` 保存历史计划，但当前没有按 batch ID 恢复归档的 CLI 参数。开始新批次前先处理现有未完成任务。
+- **修复工具不是完整备份工具**：它要求现有账本是可解析的 JSON，只追加 history 中缺失的记录；不会修复损坏 JSON，也不会重新下载已被判定为重复记录的图片。操作前备份账本，并确认 ComfyUI history 尚有对应记录。
+- **看门狗会终止进程树**：恢复流程会强制停止本机目标端口对应的进程及其子进程。请使用专用的本地 ComfyUI 实例，不要让其他任务共用它，也不要把远程 API 当作完整支持的看门狗场景。
+- **示例不是通用默认配置**：随机池内置角色与成人向提示词；使用前先检查 `lib/character.mjs`，或用显式提示词模式。示例模型、LoRA 和节点必须由使用者自行安装。
+
+这些限制也适用于 agent 自动执行。相同 seed 只用于尽量复现；模型、节点版本、工作流、尺寸或硬件变化都可能改变结果。
+
 ## 添加或调整 loadout
 
 将 ComfyUI API 格式工作流放入 `workflows/`。runner 会检查以下参数节点是否存在：
@@ -252,7 +263,7 @@ node runner.mjs --n 1 --loadout recipe-<id> --prompt "short smoke-test prompt"
 |---|---|
 | `no loadouts found` | 检查 `workflows/` 是否有有效 API 工作流，以及是否包含 `#18/#201/#1535`。 |
 | `another runner is active` / exit 5 | 等已有 runner 完成；确认它退出后使用 `--resume`。不要并行启动第二个 runner。 |
-| `ledger is corrupt` | 先确认其他 runner 已停止，再运行 `tools/ledger_repair.mjs`；不要让程序把损坏账本静默重置。 |
+| `ledger is corrupt` | 停止写入并保留原文件，先从备份恢复或修复 JSON；修复工具不能读取损坏 JSON，只有账本可解析后才能对账。 |
 | ComfyUI 无法自动启动 | 手动启动 ComfyUI，或检查 `config.json` 中的 `comfy.exe`、`args` 和 `cwd`。 |
 | submit 阶段被拒 | 检查缺失的自定义节点、模型文件和参数节点；可用 `tools/wf_inspect.mjs` 检查 UI 工作流。 |
 | 看门狗多次重启 | 查看 ComfyUI 日志，确认显存、LoRA 路径和自定义节点状态。 |
